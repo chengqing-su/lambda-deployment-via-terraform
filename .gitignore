@@ -1,0 +1,8 @@
+.idea
+.terraform.lock.hcl
+.terraform
+terraform.tfstate
+yarn-error.log
+node_modules
+function.zip
+dist

@@ -1,0 +1,17 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "compile": "rm -rf dist/ && tsc",
+    "test": "NODE_ENV=test jest --forceExit --coverage --verbose --detectOpenHandles",
+    "lint": "tsc --noEmit && eslint 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "lint-fix": "tsc --noEmit && eslint 'src/**/*.{js,ts}' 'test/**/*.{js,ts}' --fix"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.70",
+    "@types/node": "^12.12.6",
+    "aws-lambda": "^1.0.6",
+    "typescript": "^3.7.4"
+  }
+}
